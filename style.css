@@ -1,0 +1,98 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #FDF0E3;
+  color: #333;
+  text-align: center;
+}
+
+.controls {
+  margin: 20px;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 350px;
+  margin-top: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  background-color: #6C5B7B; 
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px 5px 0 0;
+  transition: height 0.2s ease;
+}
+
+.bar.sorted {
+  background-color: #e63946 !important; 
+}
+
+.bar.highlight {
+  background-color: #e63946; 
+}
+
+.controls button,
+.controls input[type="range"] {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6C5B7B;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #C06C84;
+  transform: translateY(-2px);
+}
+
+.controls input[type="range"] {
+  vertical-align: middle;
+  accent-color: #C06C84;
+}
+
+.controls select {
+  background-color: white;
+  color: #333;
+  border: 2px solid #F8B195;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='14' height='10' viewBox='0 0 14 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23C06C84' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+.controls select:hover {
+  border-color: #C06C84;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.metrics {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
